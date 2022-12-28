@@ -24,6 +24,6 @@ jobs:
       - name: "Update gist"
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GIST_ID: a74258deecd487f992a6a446ec62c05c
-          UID: '596324576'
+          GIST_ID: 11d7932f6d7ad5967547ceb194e108d1
+          UID: '27147752'
         run: deno run --allow-net --allow-env index.ts
