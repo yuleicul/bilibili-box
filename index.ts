@@ -26,7 +26,7 @@ async function getRequestData() {
     const title = cutString(v.title, 40);
     const url = `https://www.bilibili.com/video/${v.bvid}`;
     const play = intToString(v.play).padEnd(5);
-    const comment = intToString(v.comment).padEnd(5);
+    const comment = intToString(v.comment).padEnd(3);
     titleContent += sprintf("▶️%-3s 💬%-3s %s", play, comment, title) + "\n";
     mdContent +=
       sprintf("▶️%-3s 💬%-3s [%s](%s)", play, comment, title, url) + "\n\n";
