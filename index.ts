@@ -32,7 +32,7 @@ async function getRequestData() {
       sprintf("▶️%-3s 💬%-3s [%s](%s)", play, comment, title, url) + "\n\n";
   });
   return {
-    description: "My Latest BiliBili videos 👇",
+    description: "Recently uploaded videos on Bilibili",
     files: {
       latest_videos: { content: titleContent },
       "latest_videos.md": { content: mdContent },
